@@ -1,0 +1,40 @@
+.serve{
+    max-width: 1296px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.card{
+    width: calc((1296px - 1.5rem*2)/3);
+    border: 1px solid $borderColor;
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 1.5rem;
+    .card__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .box__text{
+            padding: 1.25rem 2rem;
+            h3{
+                color: $mainColor;
+                margin-bottom: 0.75rem;
+            }
+            p{
+                color: $secondaryColor;
+                min-height: 2.625rem;
+            }
+        }
+        .box__link{
+            padding: 1.25rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span{
+                color: $mainColor;
+                line-height: 1.5;
+            }
+        }
+    }
+}
