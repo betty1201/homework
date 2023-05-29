@@ -1,4 +1,7 @@
 .serve{
+    font-size: 16px;
+    font-family: 'Noto Sans TC', sans-serif;
+
     max-width: 1296px;
     margin: auto;
     display: flex;
@@ -11,22 +14,21 @@
     border-radius: 1rem;
     overflow: hidden;
     margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: column;
     .card__text{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        .box__text{
-            padding: 1.25rem 2rem;
-            h3{
-                color: $mainColor;
-                margin-bottom: 0.75rem;
-            }
-            p{
-                color: $secondaryColor;
-                min-height: 2.625rem;
-            }
+        flex-grow: 1;
+        padding: 1.25rem 2rem;
+        h3{
+            color: $mainColor;
+            margin-bottom: 0.75rem;
         }
-        .box__link{
+        p{
+            color: $secondaryColor;
+        }
+    }
+    .card__link{
+        .link{
             padding: 1.25rem 2rem;
             display: flex;
             justify-content: space-between;
